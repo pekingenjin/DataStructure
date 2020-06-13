@@ -1,0 +1,17 @@
+def merge(l, r):
+  new = []
+  ln = 0
+  rn = 0
+  while ln < len(l) and rn < len(r):
+    if l[ln] < r[rn]:
+      new.append(l[ln])
+      ln += 1
+    else:
+      new.append(r[rn])
+      rn += 1
+  for i in range(ln, len(l)):
+    new.append(l[i])
+  for i in range(rn, len(r)):
+    new.append(r[i])
+  return new
+
