@@ -16,8 +16,7 @@ def merge(l, r):
   return new
 
 def MergeSort(l):
-  if len(l) <= 3:
-    l.sort()
+  if len(l) == 1:
     return l
   else:
     a = l[:len(l) // 2]
