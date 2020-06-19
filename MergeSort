@@ -19,6 +19,7 @@ def merge(l, r):
     new.append(r[i])
   return new
 
+
 def MergeSort(l):
   if len(l) == 1:
     return l
