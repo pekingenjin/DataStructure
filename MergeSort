@@ -1,3 +1,5 @@
+# MergeSortの実装
+
 def merge(l, r):
   new = []
   ln = 0
@@ -24,6 +26,7 @@ def MergeSort(l):
     return merge(MergeSort(a), MergeSort(b))
 
 
+# 検証
 from random import randint
 l = [randint(1, 1000000) for _ in range(100000)]
 print(l)
